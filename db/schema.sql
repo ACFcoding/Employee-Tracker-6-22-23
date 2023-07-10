@@ -17,7 +17,7 @@ CREATE TABLE employee_role (
   ON DELETE SET NULL
 );
 CREATE TABLE employee_info (
-  id INT NOT NULL,
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   employee_fname VARCHAR(30) NOT NULL,
   employee_lname VARCHAR(30) NOT NULL,
   role_id INT,
